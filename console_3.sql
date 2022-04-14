@@ -844,9 +844,9 @@ SELECT * FROM cars WHERE year_of_issue  not between 1995 and 2005;--17
 SELECT max(color),count(color)  from cars where color  = (select max(color) from cars);--18
 
 
-select case when count(*)>0
-then true
-else false
-end
-from cars where year_of_issue = '2000';
+-- select case when count(*)>0
+-- then true
+-- else false
+-- end
+-- from cars where year_of_issue = '2000';
 
